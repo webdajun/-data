@@ -1,0 +1,100 @@
+<ion-view view-title="大咖同道">
+    <ion-nav-buttons side="left">
+        <a menu-toggle="left" class="button button-icon icon ion-ios-close-empty" href="#home"></a>
+
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <a menu-toggle="right" class="button button-icon icon ion-search" ng-click="Search()"></a>
+    </ion-nav-buttons>
+    <ion-content class="search-box" id="search-box"  delegate-handle="mainScroll">
+        <div class="search-bigbox">
+            <div class="search-head clearfix">
+                <div>工体北门</div>
+                <div>私营</div>
+                <div>设备的先进</div>
+                <div>私营</div>
+                <div>工体北</div>
+                <div>工体北门</div>
+                <div>私营</div>
+                <div>设备的先进</div>
+                <div>设备的先进</div>
+            </div>
+            <div class="list search-content">
+                <p id="a">a</p>
+                <div class="item">
+                    <img src="images/smallyishengtouxiang@2x.png"/>
+                    <span>陈宝玲</span>
+                </div>
+                <div class="item">
+                    <img src="images/smallyishengtouxiang@2x.png"/>
+                    <span>陈世英</span>
+                </div>
+
+                <p id="b">b</p>
+                <div class="item">
+                    <img src="images/smallyishengtouxiang@2x.png"/>
+                    <span>陈宝玲</span>
+                </div>
+                <div class="item">
+                    <img src="images/smallyishengtouxiang@2x.png"/>
+                    <span>陈世英</span>
+                </div>
+
+                <p id="c">c</p>
+                <div class="item">
+                    <img src="images/smallyishengtouxiang@2x.png"/>
+                    <span>陈宝玲</span>
+                </div>
+                <div class="item">
+                    <img src="images/smallyishengtouxiang@2x.png"/>
+                    <span>陈世英</span>
+                </div>
+                <ion-scroll delegate-handle="small" style="height:30px;">
+                <p id="z"> z</p>
+                </ion-scroll>
+                <div class="item">
+                    <img src="images/smallyishengtouxiang@2x.png"/>
+                    <span>朱晓明</span>
+                </div>
+                <div class="item">
+                    <img src="images/smallyishengtouxiang@2x.png"/>
+                    <span>张俊</span>
+                </div>
+                <ul class="search-side">
+                    <li><a href="javascript:void(0)" ng-click="scrollTo('a')">A</a></li>
+                    <li><a href="javascript:void(0)" ng-click="scrollTo('b')">B</a></li>
+                    <li><a href="javascript:void(0)" ng-click="scrollTo('c')">C</a></li>
+                    <li><a>D</a></li>
+                    <li><a>E</a></li>
+                    <li><a>F</a></li>
+                    <li><a>G</a></li>
+                    <li><a>H</a></li>
+                    <li><a>I</a></li>
+                    <li><a>G</a></li>
+                    <li><a>K</a></li>
+                    <li><a>L</a></li>
+                    <li><a>M</a></li>
+                    <li><a>N</a></li>
+                    <li><a>O</a></li>
+                    <li><a>P</a></li>
+                    <li><a>Q</a></li>
+                    <li><a>R</a></li>
+                    <li><a>S</a></li>
+                    <li><a>T</a></li>
+                    <li><a>U</a></li>
+                    <li><a>V</a></li>
+                    <li><a>W</a></li>
+                    <li><a>X</a></li>
+                    <li><a>Y</a></li>
+                    <li><a href="javascript:void(0)" ng-click="scrollTo('z')">Z</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-mengban" ng-show="onoff"></div>
+        </div>
+        <div class="search-bot clearfix" ng-show="toggle">
+            <input type="text" placeholder="{{replay}}" ng-model="obj.replayword" ng-click="Change(obj.replayword)" ng-blur="Blur()"/>
+            <input type="button" value="发送" ng-click="Onclick(obj.replayword)"/>
+        </div>
+    </ion-content>
+</ion-view>

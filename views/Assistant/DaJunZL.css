@@ -1,0 +1,98 @@
+*{margin: 0;padding: 0;}
+a{text-decoration:none;}
+/*--------------------------------------*/
+.clearfix:after{content:" ";display:block;height:0;clear:both;}
+.AssBg{background: #eee;color:#707070;}
+.AssBg a{color:#707070 !important;}
+/*-------------------------------------------------------*/
+/*------------------膜太层---------------------------------*/
+.AssModal1{width:100%;height:100%;position: absolute;top:0;left:0;background:rgba(0,0,0,0.5);text-align: center;z-index: 5;}
+.AssModal1 .MoKefu{position: absolute;left:0;bottom: -10px;width:100%;}
+.AssModal1 .MoKefu .KeFuText{width:100%;padding-right: 16px;}
+/*--------*/
+.AssModal2{width:100%;height:100%;position: absolute;top:0;left:0;background:rgba(0,0,0,0.5);text-align: center;z-index: 5;}
+.AssModal2 .YuYinImg {position: absolute;left: 50%;top:16rem;transform: translateX(-50%);}
+.AssModal2 .YuYinImg img{width:200px;height:200px;}
+.AssModal2 .MoTime {width:100%;height:35px;position: absolute;left: 50%;top:14rem;transform: translateX(-50%);}
+.AssModal2 .MoTime .MoSpan1{position: absolute;top:5px;left:1%;}
+.AssModal2 .MoTime .MoSpan3{position: absolute;top:5px;right:1%;}
+.AssModal2 .MoTime span img{height:100%;}
+.AssModal2 .MoTime span{color:#fff;font-size: 1.5rem;line-height: 35px;}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+.AssPly2{height:60px;line-height: 60px;margin: 15px 0;}
+.AssPly2 button{width:180px;height:15px;border:1px solid #ebebeb;border-radius: 10px;background: #fff !important;}
+.AssPly2 .span3{height:30px;line-height: 30px;color:#157ad4;font-weight:bold;font-size: 1.5rem;margin-left: 5px;}
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------*/
+#ASSzl{height:44px;border-top: 1px solid #779fc2;border-bottom: 1px solid #779fc2;}
+#ASScontent .ASSnav{height:90px;line-height:90px;text-align: center;margin: 12px 10px;}
+#ASScontent .Assbox{padding: 0 5%;}
+/*-------------------大咖。。医院-----------------------------*/
+.ASScontent .Assbox{position: relative;}
+.ASScontent .Assbox .AssPly2Pp{position: absolute;top:0;left:15px;}
+.ASScontent .AssAdd{display: inline-block;text-align: center;height:144px;width:100%;line-height: 144px;background: #fff;margin: 75px auto 100px;position: relative;}
+.ASScontent .huatong i{font-size:40px;}
+.ASScontent .AssAdd i{font-size: 60px;}
+.ASScontent .AssAdd h5{position: absolute;right:10px;bottom: 15px;color:#717171;}
+.ASScontent .Assbox{padding: 0 4%;}
+/*-------------合作- 查找医院-----------------------------------*/
+.borBo{border-bottom: 1px solid #ebebeb;}
+/*------------*/
+#AssHeZuo .AssHzLis{padding: 20px 5%;background: #fff;}
+#AssHeZuo .AssHzLis li{height:30px !important;line-height: 30px; padding: 0 20px; border-radius:2.3rem;border:1px solid #707070;color:#707070;float:left;margin-right: 8px;margin-bottom: 10px;}
+#AssHeZuo .HZuomain .pan1{margin-left: 20px;color:#787878;}
+#AssHeZuo .HZuomain h3{font-size: 1rem;height:57px;line-height: 57px;}
+#AssHeZuo .HZuomain h3 span{height:20px; padding: 0 10px;border:1px solid #818181;border-radius: 10px;margin-left: 8px;color:#818181;font-size: 0.5rem;}
+#AssHeZuo .zimu{position: absolute;top: 25px;right:5px;}
+#AssHeZuo .zimu li{margin-bottom: 2px;color: #bababa;}
+/*----------------平台------------------------------*/
+.AssPTcontent{color:#666;}
+.AssPTcontent .AssPTmain{padding: 0 4%;}
+.AssPTcontent .AssPTmain h4{font-size: 1rem;height:27px;line-height: 27px;}
+.AssPTcontent .AssPTmain .Assbox{text-align: center;}
+.AssPTcontent .AssPTmain .Assbox p{font-size: 0.2rem;color:#9d9ca2;margin-top: 5px;}
+.AssPTcontent .AssPTmain .Assbox .AssAdd{display: inline-block;/* margin: 15px 90px;*/}
+.AssPTcontent .AssPTmain .Assbox .AssAdd img{width:11rem;height:11rem;}
+/*-------------邀请---------------------------------*/
+
+/*----------------患者资料---------.------------------*/
+#AssHuanZheZL{padding: 2.5%;}
+#AssHuanZheZL .AssZL{background: #fff;height:145px;padding: 10px;}
+#AssHuanZheZL .AssZL .span1{font-size: 1rem;color:#838383;margin-left: 20px;}
+#AssHuanZheZL .AssZL .span2{font-size: 1rem;color:#838383;}
+#AssHuanZheZL .AssZL .AssPly{height:60px;line-height: 60px;margin: 15px 0;}
+#AssHuanZheZL .AssZL .AssPly button{width:175px;height:15px;border:1px solid #ebebeb;border-radius: 10px;}
+#AssHuanZheZL .AssZL .AssPly .span3{height:30px;line-height: 30px;color:#157ad4;font-weight:bold;font-size: 2rem;margin-left: 5px;}
+#AssHuanZheZL .AsssZLImg{width:100%;}
+#AssHuanZheZL .AsssZLImg img{width:100%;margin-top: 10px;}
+
+/*------------------------大咖医生------------------------------------------*/
+#AssDaKaYis .AssHzLis{padding: 20px 5%;background: #fff;}
+#AssDaKaYis .AssHzLis li{height:30px !important;line-height: 30px; padding: 0 20px; border-radius:2.3rem;border:1px solid #707070;color:#707070;float:left;margin-right: 8px;margin-bottom: 10px;}
+#AssDaKaYis .HZuomain .pan1{margin-left: 20px;color:#787878;}
+#AssDaKaYis .HZuomain h3{font-size: 16px;height:57px;line-height: 57px;}
+#AssDaKaYis .HZuomain h3 span{height:20px; padding: 0 10px;border:1px solid #818181;border-radius: 10px;margin-left: 8px;color:#818181;}
+#AssDaKaYis .zimu{position: absolute;top: 25px;right:5px;}
+#AssDaKaYis .zimu li{margin-bottom: 2px;color: #bababa;}
+/*------------*/
+#AssDaKaYis .HZuomain .myA_DaKaYis{border-width:0;padding-left: 50px;}
+#AssDaKaYis .HZuomain .myA_DaKaYis img {left:0;}
+#AssDaKaYis .HZuomain .myA_DaKaYis h3{line-height: 40px;}
+/*--------------------------------*/
+
+/*--------------医院推广-----------------------*/
+#PoP .popMaTop h2{font-size: 1.5rem;color:#00519a;margin-bottom: 10px;}
+#PoP .reUl li{float: left;padding: 5px 10px;margin: 0 5px;border:1px solid #707070;border-radius:2rem;color:#707070;}
+#PoP .RiDingWei{background: #f2f2f4;}
+#PoP .RiDingWei i{color:#1479d5;}
+
+
+
+
+
+
+
+
+
+

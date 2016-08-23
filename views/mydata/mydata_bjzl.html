@@ -1,0 +1,65 @@
+<ion-view view-title="我的资料" class="bar-assertive" >	
+    <ion-nav-buttons side="right">
+       <div class="box dingbu" ui-sref="mydata_fukuan"><img src="images/fukuan@2x.png" /></div> 
+    </ion-nav-buttons>
+
+
+    <ion-content class="mydata">
+        <div class="row">
+        	<div class="col">
+        		<div class="box touxiang" ng-click="onHide()"><img src="images/bigyishengtouxiang@2x.png" /></div>
+        	</div>
+        	<div class="col yishengziliao">
+	       		<h2><span>{{products.name}}  {{products.post}}</span><span class="box liuyan"><img src="images/yishenliuyan.png"></span></h2>
+        		<div class="biaoqian"><p ng-repeat="product in products.label">{{product.id}}</p></div>
+        		<div class="box"><img src="images/weixin@2x.png"></div>
+        		<div class="box"><img src="images/xinlangweibo@2x.png"></div>
+        	</div>
+        </div>
+        <p class="yytitle">相关医院</p>
+        <div class="row">
+        	<div class="col" ng-repeat="sanchuyiyuan in products.sanchu">
+        		<div class="box xgyy"><img ng-src="{{sanchuyiyuan.imgsrc}}" /></div>
+        		<p class="yymz">{{sanchuyiyuan.mingzi}}</p>
+        	</div> 
+        	<div class="col">
+        		<div class="box xgyy"><img ng-src="{{products.xizhen.imgsrc}}" /></div>
+        		<p class="yymz">{{products.xizhen.mingzi}}</p>
+        	</div>
+        </div>
+        <p class="yytitle">我的标签</p>
+    	<ul class="yy-ul ac bottom-bot" >
+    		<li ng-repeat="biaoqian in products.wode"class="yytitle-li">{{biaoqian.n}}<span>-</span></li>
+    	</ul>
+    	
+    </ion-content>
+    
+    <div class="mengban"  ng-show="show">
+    	<div class="xzbq">
+    		<div class="xzbq-top">
+    			<a class="icon ion-close"ng-click="onShow()"></a>
+    			<a class="icon ion-checkmark" ng-click="onShow()"></a>
+    		</div>
+    		<div class="bqlist">
+    			<div>
+    				<p><input type="text"value="姓名" class="yytitle-li xingming"/></p> 
+    			<p><input type="text"value="输入专科名称" class="mingcheng"/><input type="text"value="输入专科名称" class="mingcheng"/><a icon ion-plus>+</a></p>
+    			</div>
+    			
+    			<ul class="yy-ul">
+    				<li class="yytitle-li">主任</li>
+    				<li class="yytitle-li ad">副主任</li>
+    				<li class="yytitle-li">主治</li>
+    				<li class="yytitle-li">教授</li>
+    				<li class="yytitle-li">副教授</li>
+    				<li class="yytitle-li ad">讲师</li>
+    				<li class="yytitle-li ad">博士后</li>
+    				<li class="yytitle-li">博士</li>
+    				<li class="yytitle-li">硕士</li>
+    			</ul>
+    			<p><input type="text"value="其他亮点" class="mingcheng"/><input type="text"value="其他亮点" class="mingcheng"/><a icon ion-plus>+</a></p>
+    		</div>
+    	</div>	
+    </div> 	
+<div class="button button-full button-positive " style="position: fixed; bottom: -10px;width: 100%;" ui-sref="mydata">确定</div>
+</ion-view>

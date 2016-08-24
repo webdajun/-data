@@ -1,0 +1,34 @@
+<ion-view view-title="订单详情" ng-controller="DaKaCtrl">
+    <ion-nav-buttons side="right">
+        <a menu-toggle="right" class="button button-icon icon ion-ios-telephone" ng-click="AssModal1()"></a>
+    </ion-nav-buttons>
+
+
+    <ion-content class="my_bg">
+
+            <div class="my_list">
+                <div class="my_order_details_item">
+                    <div class="clearfix"><p>订单号：</p><span>100100</span></div>
+                    <div class="clearfix"><p>时间：</p><span>2016-06-06</span></div>
+                    <div class="clearfix"><p>病人姓名：</p><span>王羲之</span></div>
+                    <div class="clearfix"><p>病 人电话：</p><span>138000138000</span></div>
+                    <div class="clearfix"><p>疾病名称：</p><span>白内障</span></div>
+                    <div class="clearfix"><p>疾病描述：</p><span>看物体时光觉低下，看颜色时色觉低下，暗适应能国变差以及看清物体所需时间</span></div>
+                    <div class="clearfix"><p>就诊医院：</p><span>北京大学第三医院</span></div>
+                </div>
+                <div class="my_order_details_img">
+                    <p>病例照片</p>
+                    <div><img src="images/my_order_bl_img.png"></div>
+                    <div><img src="images/my_order_bl_img.png"></div>
+                    <div><img src="images/my_order_bl_img.png"></div>
+                </div>
+            </div>
+    </ion-content>
+    <div class="AssModal1" ng-show="show">
+        <div class="MoKefu">
+            <div class="item item-button-right KeFuText">语音服务</div>
+            <div class="item item-button-right KeFuText">电话服务</div>
+            <div class="button button-full button-stable" ng-click="HideModal1()">取消</div>
+        </div>
+    </div>
+</ion-view>

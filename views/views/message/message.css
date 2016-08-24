@@ -1,0 +1,4 @@
+.message-mengban{width:100%;height:100%;background:rgba(0,0,0,0.5);position:absolute;left:0;top:0px;z-index: 99;}
+.message-bot{width:100%;height:70px;background:#fff;position:absolute;left:0;bottom:-84px;}
+.message-bot input[type=text]{display:inline-block;float:left;padding:0;margin-left:46px;}
+.message-bot input[type=button]{display: inline-block;float:right;border:none;background:none;font-size:24px;color:#707070;margin-right:46px;}

@@ -1,0 +1,34 @@
+<ion-view view-title="找医院出诊"  ng-controller="DaKaCtrl">
+    <ion-nav-buttons side="right">
+        <a menu-toggle="right" class="button button-icon icon ion-ios-telephone" ng-click="AssModal1()"></a>
+    </ion-nav-buttons>
+
+    <ion-content class="AssPTcontent AssBg">
+        <div class="item item-button-right"><a href="#/AssDaKaYiS">医生</a></div>
+        <div class="item item-button-right">手机</div>
+        <div class="item item-button-right">手术 / 治疗 / 门诊</div>
+        <div class="AssPTmain">
+            <P class="AssPly2" ng-show="Ply2Show"><button class="button icon-left ion-volume-high button-clear button-positive"></button><span class="span3">58"</span></P>
+            <div class="Assbox">
+                <p>点击下方话筒按钮，当按钮变成蓝色即可开始录音，再次点击结束录音，录音限时1分钟。(主要描述)</p>
+                <a class="AssAdd" ng-click="AssModal2()"><img src="images/luyinhou@2x.png"></a>
+            </div>
+            <div class="button button-full button-positive">提交</div>
+        </div>
+    </ion-content>
+    <div class="AssModal1" ng-show="show">
+        <div class="MoKefu">
+            <div class="item item-button-right KeFuText">语音服务</div>
+            <div class="item item-button-right KeFuText">电话服务</div>
+            <div class="button button-full button-stable" ng-click="HideModal1()">取消</div>
+        </div>
+    </div>
+
+    <div class="AssModal2" ng-show="AssModal2Show">
+        <div class="MoTime"><span class="MoSpan1"><img src="images/yinpinleft@2x.png"></span><span class="MoSpan2">0.03</span><span class="MoSpan3"><img src="images/yinpinright@2x.png"></span></div>
+        <div class="YuYinImg"  ng-click="HideModal2()">
+            <img src="images/luyinhou@2x.png">
+        </div>
+    </div>
+
+</ion-view>

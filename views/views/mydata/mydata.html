@@ -1,0 +1,34 @@
+<ion-view view-title="{{products.name}}" class="bar-assertive" >
+	<ion-nav-buttons side="left">
+        <a menu-toggle="left" class="button button-icon icon ion-ios-close-empty" ui-sref="home"></a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+       <div class="box dingbu" ui-sref="mydata_fukuan"><img src="images/fukuan@2x.png" /></div> 
+    </ion-nav-buttons>
+
+
+    <ion-content class="mydata">
+        <div class="row">
+        	<div class="col">
+        		<div class="box touxiang"ui-sref="mydata_bj"><img src="images/bigyishengtouxiang@2x.png" /></div>
+        	</div>
+        	<div class="col yishengziliao">
+        		<h2><span>{{products.name}}  {{products.post}}</span><span class="box liuyan"><img src="images/yishenliuyan.png"></span></h2>
+        		<div class="biaoqian"><p ng-repeat="product in products.label">{{product.id}}</p></div>
+        		<div class="box"><img src="images/weixin@2x.png"></div>
+        		<div class="box"><img src="images/xinlangweibo@2x.png"></div>
+        	</div>
+        </div>
+        <p class="yytitle">相关医院</p>
+        <div class="row">
+        	<div class="col" ng-repeat="yiyuan in products.yiyuans">
+        		<div class="box xgyy"><img ng-src="{{yiyuan.imgsrc}}" /></div>
+        		<p class="yymz">{{yiyuan.mingzi}}</p>
+        	</div>     	
+        </div>
+        <p class="yytitle">我的标签</p>
+        	<ul class="yy-ul" >
+        		<li ng-repeat="biaoqian in products.wode"class="yytitle-li">{{biaoqian.n}}</li>
+        	</ul>
+    </ion-content>
+</ion-view>

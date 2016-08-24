@@ -1,0 +1,16 @@
+<ion-view view-title="同道留言">
+    <ion-nav-buttons side="left">
+        <a menu-toggle="left" class="button button-icon icon ion-ios-close-empty" href="#home"></a>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list message-content">
+              <div class="item" ng-repeat="toword in message.towords"><span  class="positive">王小妮：</span>{{toword}}</div>
+              <div class="item" ng-repeat="replayword in message.replaywords">回复<span  class="positive">王小妮：</span>{{replayword}}</div>
+            <div class="message-mengban" ng-show="toggle"></div>
+        </div>
+        <div class="message-bot">
+            <input type="text" placeholder="{{replay}}" class="message-reply" ng-model="obj.replayword" ng-click="Change(obj.replayword)" ng-blur="Blur()"/>
+            <input type="button" value="发送" class="message-sed" ng-click="Onclick(obj.replayword)"/>
+        </div>
+    </ion-content>
+</ion-view>
